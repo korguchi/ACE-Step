@@ -206,3 +206,6 @@ pipeline_ace_step_demo.py
 *.wav
 start.sh
 exps/*
+
+# Claude Code
+.claude/*
