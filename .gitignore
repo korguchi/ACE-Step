@@ -207,5 +207,16 @@ pipeline_ace_step_demo.py
 start.sh
 exps/*
 
+# Accompaniment generation project
+optuna_*.db
+optuna_*.db-shm
+optuna_*.db-wal
+comparison/
+*.generated.mp3
+data/accompaniment_dataset/*.mp3
+data/accompaniment_dataset/*.wav
+.ruff_cache/
+.ty_cache/
+
 # Claude Code
 .claude/*
