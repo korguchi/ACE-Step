@@ -1,0 +1,34 @@
+[project]
+name = "ace-step"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate==1.6.0",
+    "click>=8.3.0",
+    "cutlet>=0.5.0",
+    "datasets==3.4.1",
+    "diffusers>=0.33.0",
+    "fugashi[unidic-lite]>=1.5.2",
+    "gradio>=5.49.1",
+    "hangul-romanize==0.1.0",
+    "librosa==0.11.0",
+    "loguru==0.7.3",
+    "matplotlib==3.10.1",
+    "num2words==0.5.14",
+    "numpy>=2.3.4",
+    "peft>=0.17.1",
+    "py3langid==0.3.0",
+    "pypinyin==0.53.0",
+    "pytorch-lightning==2.5.1",
+    "soundfile==0.13.1",
+    "spacy==3.8.4",
+    "tensorboard>=2.20.0",
+    "tensorboardx>=2.6.4",
+    "torch>=2.9.0",
+    "torchaudio>=2.9.0",
+    "torchvision>=0.24.0",
+    "tqdm>=4.67.1",
+    "transformers==4.50.0",
+]
