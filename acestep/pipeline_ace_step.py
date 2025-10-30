@@ -431,7 +431,7 @@ class ACEStepPipeline:
             language = langCounts[0][0]
             if len(langCounts) > 1 and language == "en":
                 language = langCounts[1][0]
-        except Exception as err:
+        except Exception:
             language = "en"
         return language
 

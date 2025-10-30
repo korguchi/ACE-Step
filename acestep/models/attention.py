@@ -14,7 +14,6 @@
 from typing import Tuple, Union
 
 import torch
-import torch.nn.functional as F
 from torch import nn
 
 from diffusers.utils import logging

@@ -14,7 +14,6 @@ import torchvision.transforms as transforms
 from diffusers.models.modeling_utils import ModelMixin
 from diffusers.loaders import FromOriginalModelMixin
 from diffusers.configuration_utils import ConfigMixin, register_to_config
-from tqdm import tqdm
 
 try:
     from .music_vocoder import ADaMoSHiFiGANV1

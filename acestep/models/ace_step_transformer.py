@@ -12,14 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 from dataclasses import dataclass
-from typing import Any, Dict, Optional, Tuple, List, Union
+from typing import Optional, Tuple, List, Union
 
 import torch
 import torch.nn.functional as F
 from torch import nn
 
 from diffusers.configuration_utils import ConfigMixin, register_to_config
-from diffusers.utils import BaseOutput, is_torch_version
+from diffusers.utils import BaseOutput
 from diffusers.models.modeling_utils import ModelMixin
 from diffusers.models.embeddings import TimestepEmbedding, Timesteps
 from diffusers.loaders import FromOriginalModelMixin, PeftAdapterMixin

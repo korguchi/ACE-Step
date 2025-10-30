@@ -16,7 +16,7 @@ from spacy.lang.zh import Chinese
 from tokenizers import Tokenizer
 
 from .zh_num2words import TextNorm as zh_num2words
-from typing import Dict, List, Optional, Set, Union
+from typing import List, Union
 
 
 # copy from https://github.com/coqui-ai/TTS/blob/dbf1a08a0d4e47fdad6172e433eeb34bc6b13b4e/TTS/tts/layers/xtts/tokenizer.py
