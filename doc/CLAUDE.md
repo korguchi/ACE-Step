@@ -101,16 +101,16 @@ uv run python scripts/train_image2image.py \
 ### 11 Gitバージョン管理とブランチ戦略
 
 #### 11.1 ブランチモデル
-- **main**: 安定版ブランチ（マージ前にレビュー必須）
+- **s2a**: 伴奏生成機能用安定版ブランチ（マージ前にレビュー必須）
 - **feature/***: 各フェーズの実装用ブランチ
-  - `feature/phase1-foundation`: Phase 1（基盤インフラ）
-  - `feature/phase2-image2image`: Phase 2（Image2Image方式）
-  - `feature/phase3-controlnet`: Phase 3（ControlNet方式）
-  - `feature/phase4-optuna`: Phase 4（Optuna統合）
-  - `feature/phase5-inference`: Phase 5（推論・評価）
+  - `s2a/feature/phase1-foundation`: Phase 1（基盤インフラ）
+  - `s2a/feature/phase2-image2image`: Phase 2（Image2Image方式）
+  - `s2a/feature/phase3-controlnet`: Phase 3（ControlNet方式）
+  - `s2a/feature/phase4-optuna`: Phase 4（Optuna統合）
+  - `s2a/feature/phase5-inference`: Phase 5（推論・評価）
 - **experiment/***: 実験用ブランチ（一時的、マージ不要）
-  - `experiment/lora-rank-128`: LoRAランク128での検証
-  - `experiment/ref-strength-0.3`: リファレンス強度0.3での実験
+  - `s2a/experiment/lora-rank-128`: LoRAランク128での検証
+  - `s2a/experiment/ref-strength-0.3`: リファレンス強度0.3での実験
 
 #### 11.2 コミットメッセージ規約
 **フォーマット**: `[Phase番号] カテゴリ: 変更内容`
