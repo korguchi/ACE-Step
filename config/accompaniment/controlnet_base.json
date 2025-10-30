@@ -1,0 +1,37 @@
+{
+    "lora": {
+        "r": 256,
+        "lora_alpha": 32,
+        "target_modules": [
+            "to_q",
+            "to_k",
+            "to_v",
+            "to_out.0",
+            "lyric_proj"
+        ],
+        "use_rslora": true,
+        "lora_dropout": 0.0
+    },
+    "accompaniment": {
+        "mode": "controlnet",
+        "output_type": "accompaniment",
+        "control_encoder_depth": 6,
+        "control_encoder_dim": 1536,
+        "controlnet_scale": 1.0,
+        "injection_layers": [0, 2, 4, 6, 8]
+    },
+    "dataset_path": "./data/accompaniment_dataset",
+    "max_duration": 240.0,
+    "learning_rate": 1e-4,
+    "max_steps": 200000,
+    "warmup_steps": 100,
+    "weight_decay": 0.01,
+    "batch_size": 1,
+    "accumulate_grad_batches": 4,
+    "ssl_coeff": 1.0,
+    "ssl_depths": [8, 8],
+    "checkpoint_every_n_steps": 2000,
+    "exp_name": "accompaniment_controlnet",
+    "logger_dir": "./exps/logs/",
+    "shift": 3.0
+}

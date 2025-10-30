@@ -1,0 +1,36 @@
+{
+    "n_trials": 50,
+    "timeout": null,
+    "pruner_type": "median",
+    "pruner_n_startup_trials": 5,
+    "pruner_n_warmup_steps": 100,
+    "search_space": {
+        "reference_strength": {
+            "type": "float",
+            "low": 0.1,
+            "high": 0.9
+        },
+        "lora_rank": {
+            "type": "int",
+            "low": 64,
+            "high": 512,
+            "step": 64
+        },
+        "learning_rate": {
+            "type": "loguniform",
+            "low": 1e-5,
+            "high": 1e-3
+        },
+        "controlnet_scale": {
+            "type": "float",
+            "low": 0.5,
+            "high": 2.0
+        },
+        "control_encoder_depth": {
+            "type": "int",
+            "low": 4,
+            "high": 12,
+            "step": 2
+        }
+    }
+}

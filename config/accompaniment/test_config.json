@@ -1,0 +1,33 @@
+{
+    "lora": {
+        "r": 64,
+        "lora_alpha": 16,
+        "target_modules": [
+            "to_q",
+            "to_k",
+            "to_v",
+            "to_out.0"
+        ],
+        "use_rslora": true,
+        "lora_dropout": 0.0
+    },
+    "accompaniment": {
+        "mode": "image2image",
+        "output_type": "accompaniment",
+        "reference_strength": 0.5
+    },
+    "dataset_path": "./data/accompaniment_dataset",
+    "max_duration": 30.0,
+    "learning_rate": 1e-4,
+    "max_steps": 100,
+    "warmup_steps": 10,
+    "weight_decay": 0.01,
+    "batch_size": 1,
+    "accumulate_grad_batches": 1,
+    "ssl_coeff": 1.0,
+    "ssl_depths": [8, 8],
+    "checkpoint_every_n_steps": 10000,
+    "exp_name": "accompaniment_test",
+    "logger_dir": "./exps/logs/",
+    "shift": 3.0
+}
